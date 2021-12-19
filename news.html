@@ -1,0 +1,178 @@
+<!DOCTYPE html>  
+<html>
+<head>
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/media.css">
+    <title>Chezz</title> <!-- Заголовок страницы -->
+    <link type="image/png" sizes="24x24" rel="icon" href="assets/images/icon.png">
+    <script language="JavaScript" type="text/javascript" src="assets/js/login.js"></script>
+    <script language="JavaScript" type="text/javascript" src="assets/js/slides.js"></script>
+</head>
+<body>
+    <header class="Title">
+        <div class="widget-list">
+            <button onclick="unhideenter();" class="enter"><span id="nameofplayer" >Войти</span></button>
+            <button onclick="window.location.href='C:/Users/1/Desktop/html/Курсовая/rules1.html'" class="hreff">Правила</button>
+            <button onclick="window.location.href='C:/Users/1/Desktop/html/Курсовая/gamechoice.html'" class="hreff">Играть</button>
+            <button onclick="window.location.href='C:/Users/1/Desktop/html/Курсовая/news.html'" class="hreff">Новости</button>
+            <button onclick="unhideregistr();" class="registr">Регистрация</button>
+        </div>
+    </header>
+
+    <div class="blocfornews">
+        <main class="contentof">
+
+            <div class="infonews" id="header1">
+                <p class="uppernames">
+                    Алиреза Фируджа и Фабиано Каруана в турнире претендентов
+                </p>
+            </div>
+
+            <div class="infonews" id="header2">
+                <p class="uppernames">
+                    Рига: 19-летний Кирилл Шевченко выиграл Мемориал Таля по блицу
+                </p>
+            </div>
+
+            <div class="infonews" id="header3">
+                <p class="uppernames">
+                    Участникам "Больших швейцарок" не сообщали, за что они борются. Широв критикует ФИДЕ
+                </p>
+            </div>
+        
+
+
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                  <img class="slideimage" src="assets/images/news1.jpg">
+                </div>
+              
+                <div class="mySlides fade">
+                  <img class="slideimage" src="assets/images/news2.jpg">
+                </div>
+              
+                <div class="mySlides fade">
+                  <img class="slideimage" src="assets/images/news3.jpg">
+                </div>
+              
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+
+        </br>
+            <!--Информация о новостях-->
+            <div class="infonews" id="info1">
+                <p> Лишь через шесть с половиной часов после начала решающего тура "Большой швейцарки" стали
+                     известны имена двух счастливых обладателей путёвок в турнир претендентов: Алиреза Фируджа и Фабиано Каруана.</p>
+                <img class="newsimage" src="assets/images/news11.jpg">
+                <p>Причём на первых 13 досках все партии завершились вничью.</p>
+                <img class="newsimage" src="assets/images/news12.jpg">
+                <p>Помимо названных выше героев, Григорий Опарин, Юй Янъи, Винсент Каймер,
+                     Максим Вашье-Лаграв, Александр Предке и Алексей Широв забронировали себе места в серии Гран-при 2022.
+                </p>
+            </div>
+
+            <div class="infonews" id="info2">
+                <p> В столице Латвии завершился 18-туровый блицмарафон, приуроченный к 85-летию со дня рождения Михаила Таля.</p>
+               <img class="newsimage" src="assets/images/news21.jpg">
+               <p>По швейцарской системе боролись 120 участников начиная с 
+                Вашье-Лаграва, Ароняна и Каруаны, а первое место занял стартовавший под 58-м номером 19-летний гроссмейстер из Киева Кирилл Шевченко.</p>
+               <img class="newsimage" src="assets/images/news22.jpg">
+            </div>
+
+            <div class="infonews" id="info3">
+                <p> Занявший в итоге восьмое место Алексей Широв только перед последним туром узнал, что претендует на
+                     выход в серию Гран-при. Ему сообщил об этом за ужином партнёр по сборной Антон Давид Гихарро, который и 
+                     сам проведал о такой возможности на пару дней раньше.</p>
+                <video controls class="newsimage" poster="assets/images/news3.jpg">
+                    <source src="assets/videos/Shirov - FIDE 071121.mp4" type="video/mp4">
+                </video>
+               <p>Занявший в итоге восьмое место Алексей Широв только перед последним туром узнал, что претендует
+                    на выход в серию Гран-при. Ему сообщил об этом за ужином партнёр по сборной Антон Давид Гихарро, 
+                    который и сам проведал о такой возможности на пару дней раньше.</p>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        if (name)
+            document.querySelector('#nameofplayer').innerHTML = name;
+        currentSlide(1);
+    </script>
+
+    <footer class="down">
+        <div class="downcenter">
+            <div><img class="imagedown" src="assets/images/vk.png"></div>
+            <div><img class="imagedown" src="assets/images/twitter.png"></div>
+            <div><img class="imagedown" src="assets/images/insta.png"></div>
+            <div><img class="imagedown" src="assets/images/youtube.png"></div>
+        </div>
+        <span style="font-size: small;">
+            &#169;Chezz | Все права защищены
+        </span>
+    </footer>
+
+
+    <div id="hideenter">
+        <div id="windowenter">
+            <div class="entername">
+                Вход
+            </div>
+
+            <a onclick="hideenter()" class="closereg"></a>
+
+            <label for="email"><b>Имя:</b></label>
+            <input type="text" placeholder="Введите имя" name="newname" id="newnameenter" required>
+
+            <label for="psw"><b>Пароль:</b></label>
+            <input type="password" placeholder="Введите пароль" name="psw" required>
+            
+            <div>
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Запомнить пользователя
+                </label>
+            </div>
+            <button onclick="hideenter()" type="submit" class="regbtn">Вход</button>
+        </div>
+    </div>
+
+    <div id="hideregistration">
+        <div id="windowregistration">
+            <div class="regname">
+                Регистрация
+            </div>
+
+            <a onclick="hideregistr()" class="closereg"></a>
+
+            <label for="email"><b>Имя:</b></label>
+            <input type="text" placeholder="Введите имя" name="newname" id="newnamereg" required>
+
+            <label for="email"><b>Email:</b></label>
+            <input type="text" placeholder="Введите Email" name="email" required>
+
+            <label for="psw"><b>Пароль:</b></label>
+            <input type="password" placeholder="Введите пароль" name="psw" required>
+
+            <label for="psw-repeat"><b>Повторите пароль</b></label>
+            <input type="password" placeholder="Повторите пароль" name="psw-repeat" required>
+            
+            <div>
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Запомнить пользователя
+                </label>
+            </div>
+            <button onclick="hideregistr()" type="submit" class="regbtn">Зарегестрироваться</button>
+        </div>
+    </div>
+    
+</body>
+</html>

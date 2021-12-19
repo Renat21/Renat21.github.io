@@ -1,0 +1,158 @@
+<!DOCTYPE html>  
+<html>
+<head>
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/media.css">
+    <title>Chezz</title> <!-- Заголовок страницы -->
+    <link type="image/png" sizes="24x24" rel="icon" href="assets/images/icon.png">
+    <script language="JavaScript" type="text/javascript" src="assets/js/login.js"></script>
+</head>
+<body>
+    <header class="Title">
+        <div class="widget-list">
+            <button onclick="unhideenter();" class="enter"><span id="nameofplayer" >Войти</span></button>
+            <button onclick="window.location.href='C:/Users/1/Desktop/html/Курсовая/rules1.html'" class="hreff">Правила</button>
+            <button onclick="window.location.href='C:/Users/1/Desktop/html/Курсовая/gamechoice.html'" class="hreff">Играть</button>
+            <button onclick="window.location.href='C:/Users/1/Desktop/html/Курсовая/news.html'" class="hreff">Новости</button>
+            <button onclick="unhideregistr();" class="registr">Регистрация</button>
+        </div>
+    </header>
+
+    <script>
+        if (name)
+            document.querySelector('#nameofplayer').innerHTML = name;
+    </script>
+    
+    <div class="center">
+        <a class="nextrule" onclick="window.location.href='C:/Users/1/Desktop/html/Курсовая/rules2.html'"><span class="nextruleword">&#10094;</span></a>
+        <aside class="rules">
+            Шаги развития
+            <button onclick="window.location.href='C:/Users/1/Desktop/html/Курсовая/rules1.html'">Как располагается доска</button>
+            <button onclick="window.location.href='C:/Users/1/Desktop/html/Курсовая/rules2.html'">Как ходят фигуры</button>
+            <button class="active">Особые правила шахмат</button>
+            <button href="">Первый ход</button>
+            <button href="">Как победить в шахматной партии</button>
+            <button href="">Основные стратегические приемы</button>
+            <button href="">Играем как можно чаще</button>
+        </aside>
+
+        <div class="block">
+            <main class="contentof">
+                <div class="uppernames">Шаг 3. Особые правила шахмат</div>
+                <p> В шахматах есть несколько особых правил, придуманных, чтобы сделать игру более весёлой и интересной.</p>
+
+                <div class="uppernames">Как превратить пешку в шахматах</div>
+                <p>У пешки есть одна замечательная особенность: дойдя до противоположной стороны доски, 
+                    она может стать любой другой фигурой (это называется "пешечное превращение").</p>
+                <img class="howto" src="assets/images/pawntoqueen.jpeg">
+                <p>Пешка может превратиться в любую фигуру. Некоторым любителям кажется, 
+                    что пешка может превратиться лишь в одну из ранее взятых фигур. Это НЕ так.
+                     Как правило, пешку превращают в ферзя, но возможно и превращение в другие фигуры.</p>
+                <img class="howto" src="assets/images/pawntoqueen.gif">
+
+                
+                <div class="uppernames">Взятие на проходе</div>
+                <p>
+                    Последнее правило, относящееся к пешкам, называется "взятие на проходе".
+                     Пешку, сделавшую ход на два поля от своей первоначальной позиции, может 
+                     взять пешка соперника, расположенная на соседней вертикали и на горизонтали,
+                      только что занятой пешкой. При взятии пешка соперника занимает не то поле,
+                       которое заняла взятая пешка, а то, которое она миновала.
+                </p>
+                <p>
+                    Такое взятие возможно только ходом, следующим за продвижением 
+                    на два поля, и невозможно впоследствии. Изучим пример, чтобы лучше
+                    понять это необычное, но важное правило.
+                </p>
+
+
+                <div class="uppernames">Рокировка</div>
+                <p>
+                    Рокировка - еще одно особое правило шахмат.
+                    Рокировка позволяет сделать две важные вещи за один ход:
+                    обезопасить (по возможности) вашего короля и вывести из угла ладью,
+                    включив её в игру. Совершая рокировку, игрок перемещает своего короля 
+                    на два поля по направлению к ладье, затем эта ладья занимает на поле, 
+                    которое король только что пересек (смотрите пример). Рокировку можно выполнить
+                    только при соблюдении следующих условий:
+
+                    <p>1) до рокировки король ни разу не ходил;</p>
+                    <p>2) ладья, совершающая  рокировку, ни разу не ходила;</p>
+                    <p>3) между королём и ладьёй нет других фигур;</p>
+                    <p>4) король не находится под шахом и не пересекает поле, атакованное фигурой противника.</p>
+                    Обратите внимание, что при рокировке на королевский фланг король оказывается ближе к краю доски. Этот ход называется "короткой рокировкой". Рокировка на другой фланг, через поле, где находился ферзь, называется "длинной рокировкой". Как при короткой, так и при длинной рокировке, король передвигается только на два поля.
+                </p>
+                <img class="howto" src="assets/images/roki.gif">
+            </main>
+        </div>
+        <a class="prevrule" onclick="window.location.href='C:/Users/1/Desktop/html/Курсовая/rules1.html'"><span class="prevruleword">&#10095;</span></a>
+    </div>
+
+    <footer class="down">
+        <div class="downcenter">
+            <div><img class="imagedown" src="assets/images/vk.png"></div>
+            <div><img class="imagedown" src="assets/images/twitter.png"></div>
+            <div><img class="imagedown" src="assets/images/insta.png"></div>
+            <div><img class="imagedown" src="assets/images/youtube.png"></div>
+        </div>
+        <span style="font-size: small;">
+            &#169;Chezz | Все права защищены
+        </span>
+    </footer>
+
+    <div id="hideenter">
+        <div id="windowenter">
+            <div class="entername">
+                Вход
+            </div>
+
+            <a onclick="hideenter()" class="closereg"></a>
+
+            <label for="email"><b>Имя:</b></label>
+            <input type="text" placeholder="Введите имя" name="newname" id="newnameenter" required>
+
+            <label for="psw"><b>Пароль:</b></label>
+            <input type="password" placeholder="Введите пароль" name="psw" required>
+            
+            <div>
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Запомнить пользователя
+                </label>
+            </div>
+            <button onclick="hideenter()" type="submit" class="enterbtn">Вход</button>
+        </div>
+    </div>
+
+    <div id="hideregistration">
+        <div id="windowregistration">
+            <div class="regname">
+                Регистрация
+            </div>
+
+            <a onclick="hideregistr()" class="closereg"></a>
+
+            <label for="email"><b>Имя:</b></label>
+            <input type="text" placeholder="Введите имя" name="newname" id="newnamereg" required>
+
+            <label for="email"><b>Email:</b></label>
+            <input type="text" placeholder="Введите Email" name="email" required>
+
+            <label for="psw"><b>Пароль:</b></label>
+            <input type="password" placeholder="Введите пароль" name="psw" required>
+
+            <label for="psw-repeat"><b>Повторите пароль</b></label>
+            <input type="password" placeholder="Повторите пароль" name="psw-repeat" required>
+            
+            <div>
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Запомнить пользователя
+                </label>
+            </div>
+            <button onclick="hideregistr()" type="submit" class="regbtn">Зарегестрироваться</button>
+        </div>
+    </div>
+    
+</body>
+</html>

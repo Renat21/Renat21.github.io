@@ -1,0 +1,169 @@
+<!DOCTYPE html>  
+<html>
+<head>
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/media.css">
+    <title>Chezz</title> <!-- Заголовок страницы -->
+    <link type="image/png" sizes="24x24" rel="icon" href="assets/images/icon.png">
+    <script language="JavaScript" type="text/javascript" src="assets/js/login.js"></script>
+</head>
+<body>
+    <header class="Title">
+        <div class="widget-list">
+            <button onclick="unhideenter();" class="enter"><span id="nameofplayer" >Войти</span></button>
+            <button onclick="window.location.href='C:/Users/1/Desktop/html/Курсовая/rules1.html'" class="hreff">Правила</button>
+            <button onclick="window.location.href='C:/Users/1/Desktop/html/Курсовая/gamechoice.html'" class="hreff">Играть</button>
+            <button onclick="window.location.href='C:/Users/1/Desktop/html/Курсовая/news.html'" class="hreff">Новости</button>
+            <button onclick="unhideregistr();" class="registr">Регистрация</button>
+        </div>
+    </header>
+
+    <script>
+        if (name)
+            document.querySelector('#nameofplayer').innerHTML = name;
+    </script>
+    
+    <div class="center">
+        <a class="nextrule" onclick="window.location.href='C:/Users/1/Desktop/html/Курсовая/rules1.html'"><span class="nextruleword">&#10094;</span></a>
+        <aside class="rules">
+             Шаги развития
+            <button onclick="window.location.href='C:/Users/1/Desktop/html/Курсовая/rules1.html'">Как располагается доска</button>
+            <button class="active" href="">Как ходят фигуры</button>
+            <button onclick="window.location.href='C:/Users/1/Desktop/html/Курсовая/rules3.html'">Особые правила шахмат</button>
+            <button href="">Первый ход</button>
+            <button href="">Как победить в шахматной партии</button>
+            <button href="">Основные стратегические приемы</button>
+            <button href="">Играем как можно чаще</button>
+        </aside>
+
+        <div class="block">
+            <main class="contentof">
+                <div class="uppernames">Шаг 2. Как ходят фигуры</div>
+                <p>
+                Каждая из шести фигур ходит по-своему. Фигуры не могут перепрыгивать через другие фигуры (за исключением коня)
+                или вставать на поле, где уже стоит фигура того же цвета. Однако они могут встать на место фигуры противника, 
+                которая считается взятой. Фигуры обычно размещают так, чтобы они угрожали фигурам противника взятием (встать на поле,
+                где стояла взятая фигура, заменив её), защищали свои собственные фигуры, которым грозит взятие, или держали под боем 
+                важные поля доски.
+                </p>
+
+                <p><div class="uppernames">Как в шахматах ходит король</div></p>
+                <img class="howto" src="assets/images/king.gif">
+                <p>
+                    Король - самая важная фигура, но при этом и одна из самых слабых. Король может ходить 
+                    только на одно поле в любом направлении: вверх, вниз, в стороны и по диагонали. Король 
+                    никогда не может вставать на битое поле (где его может взять фигура соперника). Когда король 
+                    атакован другой фигурой, это называется "шах".
+                </p>
+
+            
+                <p><div class="uppernames">Как в шахматах ходит ферзь</div></p>
+                <img class="howto" src="assets/images/queen.gif">
+                <p>
+                Ферзь - самая сильная фигура. Он может ходить по прямой в любом
+                    направлении - вперёд, назад, в стороны или по диагонали на любое число полей, 
+                    но при этом он не может перепрыгивать через другие фигуры. Если ферзь или любая 
+                    другая фигура берёт фигуру соперника, ход заканчивается. Смотрите, как белый ферзь 
+                    берёт чёрного, вынуждая чёрного короля сделать ход.
+                </p>
+
+
+                <p><div class="uppernames">Как в шахматах ходит ладья</div></p>
+                <img class="howto" src="assets/images/rook.gif">
+                <p>
+                    Ладья может ходить на любое число полей, но только вперёд,
+                    назад и в стороны (не по диагонали). Ладьи особенно сильны,
+                     когда они защищают друг друга и действуют сообща!
+                </p>
+
+                <p><div class="uppernames">Как в шахматах ходит конь</div></p>
+                <img class="howto" src="assets/images/knight.gif">
+                <p>
+                    Кони ходят иначе, чем другие фигуры - на два поля в одном направлении и 
+                    далее на одно поле под углом 90 градусов, буквой "Г". Конь - единственная
+                     фигура, способная перепрыгивать через другие фигуры.
+                </p>
+
+                <p><div class="uppernames">Как в шахматах ходит пешка</div></p>
+                <img class="howto" src="assets/images/pawn.gif">
+                <p>
+                    Пешка - необычная фигура, она ходит и берёт по-разному: ходить пешка может 
+                    лишь вперёд, а брать - лишь по диагонали. Пешка может передвигаться только на 
+                    одно поле за ход. но еще не ходившая пешка может пойти вперёд на одно или два 
+                    поля. Пешка может брать только по диагонали на одно поле перед собой. Пешка не 
+                    может ходить или брать назад. Если другая фигура находится прямо перед пешкой, 
+                    та не может сделать ход вперёд и не может взять эту фигуру.
+                </p>
+            </main>
+        </div>
+        <a class="prevrule" onclick="window.location.href='C:/Users/1/Desktop/html/Курсовая/rules3.html'"><span class="prevruleword">&#10095;</span></a>
+    </div>
+
+    <footer class="down">
+        <div class="downcenter">
+            <div><img class="imagedown" src="assets/images/vk.png"></div>
+            <div><img class="imagedown" src="assets/images/twitter.png"></div>
+            <div><img class="imagedown" src="assets/images/insta.png"></div>
+            <div><img class="imagedown" src="assets/images/youtube.png"></div>
+        </div>
+        <span style="font-size: small;">
+            &#169;Chezz | Все права защищены
+        </span>
+    </footer>
+
+    <div id="hideenter">
+        <div id="windowenter">
+            <div class="entername">
+                Вход
+            </div>
+
+            <a onclick="hideenter()" class="closereg"></a>
+
+            <label for="email"><b>Имя:</b></label>
+            <input type="text" placeholder="Введите имя" name="newname" id="newnameenter" required>
+
+            <label for="psw"><b>Пароль:</b></label>
+            <input type="password" placeholder="Введите пароль" name="psw" required>
+            
+            <div>
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Запомнить пользователя
+                </label>
+            </div>
+            <button onclick="hideenter()" type="submit" class="enterbtn">Вход</button>
+        </div>
+    </div>
+
+    <div id="hideregistration">
+        <div id="windowregistration">
+            <div class="regname">
+                Регистрация
+            </div>
+
+            <a onclick="hideregistr()" class="closereg"></a>
+
+            <label for="email"><b>Имя:</b></label>
+            <input type="text" placeholder="Введите имя" name="newname" id="newnamereg" required>
+
+            <label for="email"><b>Email:</b></label>
+            <input type="text" placeholder="Введите Email" name="email" required>
+
+            <label for="psw"><b>Пароль:</b></label>
+            <input type="password" placeholder="Введите пароль" name="psw" required>
+
+            <label for="psw-repeat"><b>Повторите пароль</b></label>
+            <input type="password" placeholder="Повторите пароль" name="psw-repeat" required>
+            
+            <div>
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Запомнить пользователя
+                </label>
+            </div>
+            <button onclick="hideregistr()" type="submit" class="regbtn">Зарегестрироваться</button>
+        </div>
+    </div>
+    
+</body>
+</html>

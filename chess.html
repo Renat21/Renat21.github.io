@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/media.css">
+    <title>Chezz</title> <!-- Заголовок страницы -->
+    <link type="image/png" sizes="24x24" rel="icon" href="assets/images/icon.png">
+
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js" type="text/javascript"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/jquery-ui.min.js"></script>
+    <script language="JavaScript" type="text/javascript" src="assets/js/chess_table.js"></script>
+    <script language="JavaScript" type="text/javascript" src="assets/js/login.js"></script>
+</head>
+<body>
+    <header class="Title">
+        <div class="widget-list">
+            <button onclick="unhideenter();" class="enter"><span id="nameofplayer" >Войти</span></button>
+            <button onclick="window.location.href='C:/Users/1/Desktop/html/Курсовая/rules1.html'" class="hreff">Правила</button>
+            <button onclick="window.location.href='C:/Users/1/Desktop/html/Курсовая/gamechoice.html'" class="hreff">Играть</button>
+            <button onclick="window.location.href='C:/Users/1/Desktop/html/Курсовая/news.html'" class="hreff">Новости</button>
+            <button onclick="unhideregistr();" class="registr">Регистрация</button>
+        </div>
+    </header>
+
+    <script>
+        if (name)
+            document.querySelector('#nameofplayer').innerHTML = name;
+    </script>
+
+    <div class="chess">
+        <div class="chess_desk">
+        </div>
+    </div>
+
+    <footer class="down">
+        <div class="downcenter">
+            <div><img class="imagedown" src="assets/images/vk.png"></div>
+            <div><img class="imagedown" src="assets/images/twitter.png"></div>
+            <div><img class="imagedown" src="assets/images/insta.png"></div>
+            <div><img class="imagedown" src="assets/images/youtube.png"></div>
+        </div>
+        <span style="font-size: small;">
+            &#169;Chezz | Все права защищены
+        </span>
+    </footer>
+
+     <div id="hideenter">
+        <div id="windowenter">
+            <div class="entername">
+                Вход
+            </div>
+
+            <a onclick="hideenter()" class="closereg"></a>
+
+            <label for="email"><b>Имя:</b></label>
+            <input type="text" placeholder="Введите имя" name="newname" id="newnameenter" required>
+
+            <label for="psw"><b>Пароль:</b></label>
+            <input type="password" placeholder="Введите пароль" name="psw" required>
+            
+            <div>
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Запомнить пользователя
+                </label>
+            </div>
+            <button onclick="hideenter()" type="submit" class="regbtn">Вход</button>
+        </div>
+    </div>
+
+    <div id="hideregistration">
+        <div id="windowregistration">
+            <div class="regname">
+                Регистрация
+            </div>
+
+            <a onclick="hideregistr()" class="closereg"></a>
+
+            <label for="email"><b>Имя:</b></label>
+            <input type="text" placeholder="Введите имя" name="newname" id="newnamereg" required>
+
+            <label for="email"><b>Email:</b></label>
+            <input type="text" placeholder="Введите Email" name="email" required>
+
+            <label for="psw"><b>Пароль:</b></label>
+            <input type="password" placeholder="Введите пароль" name="psw" required>
+
+            <label for="psw-repeat"><b>Повторите пароль</b></label>
+            <input type="password" placeholder="Повторите пароль" name="psw-repeat" required>
+            
+            <div>
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Запомнить пользователя
+                </label>
+            </div>
+            <button onclick="hideregistr()" type="submit" class="regbtn">Зарегестрироваться</button>
+        </div>
+    </div>
+</body>
+</html>

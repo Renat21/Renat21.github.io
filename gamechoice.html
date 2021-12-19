@@ -1,0 +1,148 @@
+<!DOCTYPE html>  
+<html>
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/media.css">
+    <title>Chezz</title> <!-- Заголовок страницы -->
+    <link type="image/png" sizes="24x24" rel="icon" href="assets/images/icon.png">
+    <script language="JavaScript" type="text/javascript" src="assets/js/login.js"></script>
+
+<body>
+    <header class="Title">
+        <div class="widget-list">
+            <button onclick="unhideenter();" class="enter"><span id="nameofplayer" >Войти</span></button>
+            <button onclick="window.location.href='C:/Users/1/Desktop/html/Курсовая/rules1.html'" class="hreff">Правила</button>
+            <button onclick="window.location.href='C:/Users/1/Desktop/html/Курсовая/gamechoice.html'" class="hreff">Играть</button>
+            <button onclick="window.location.href='C:/Users/1/Desktop/html/Курсовая/news.html'" class="hreff">Новости</button>
+            <button onclick="unhideregistr();" class="registr">Регистрация</button>
+        </div>
+    </header>
+
+    <script>
+        if (name)
+            document.querySelector('#nameofplayer').innerHTML = name;
+    </script>
+
+
+    <main class="GameTo">
+        <button onclick="unhidegame()">
+            <img class="pictures" src="assets/images/friend.png"><p class="txtonbtn">C друзьями</p>
+        </button>
+        <button onclick="unhidegame()">
+            <img class="pictures" src="assets/images/robot.png"><p class="txtonbtn">C ботом</p>
+        </button>
+        <button onclick="unhidegame()">
+            <img class="pictures" src="assets/images/player.png"><p class="txtonbtn">C игроками</p>
+        </button>
+    </main>
+
+    <footer class="down">
+        <div class="downcenter">
+            <div><img class="imagedown" src="assets/images/vk.png"></div>
+            <div><img class="imagedown" src="assets/images/twitter.png"></div>
+            <div><img class="imagedown" src="assets/images/insta.png"></div>
+            <div><img class="imagedown" src="assets/images/youtube.png"></div>
+        </div>
+        <span style="font-size: small;">
+            &#169;Chezz | Все права защищены
+        </span>
+    </footer>
+
+    <div id="hide">
+        <div id="window">
+            <div class="uppernames">
+                Создать игру
+            </div>
+            <a onclick="hidegame()" class="close"></a>
+
+            <div>
+                <label class="gamemodes">Выберите игровой режим</label>
+                <select class="modes">
+                  <option value="">Один из вариантов…</option>
+                  <option value="clasic">Классические шахматы</option>
+                  <option value="three-check">Три шаха</option>
+                </select>
+              </div>
+
+            <div class="slidecontainer">
+                <div>Основное время : <span id="minutes"></span> мин.</div>
+                <input type="range" min="1" max="60" value="10" class="slider" id="rangeofminute">
+            </div>
+            <div class="slidecontainer">
+                <div>Добавочное время : <span id="seconds"></span> cек.</div>
+                <input type="range" min="1" max="180" value="10" class="slider" id="rangeofsecond">
+            </div>
+                
+            <script>
+                var sliderofmin = document.getElementById("rangeofminute");
+                var outputofmin = document.getElementById("minutes");
+                outputofmin.innerHTML = sliderofmin.value;
+                var sliderofsec = document.getElementById("rangeofsecond");
+                var outputofsec = document.getElementById("seconds");
+                outputofsec.innerHTML = sliderofsec.value;
+                
+                sliderofmin.oninput = function() {
+                outputofmin.innerHTML = this.value;
+                }
+                sliderofsec.oninput = function() {
+                outputofsec.innerHTML = this.value;
+                }
+            </script>
+            <a href="chess.html" class="play">Играть</a>
+        </div>
+    </div>
+
+    <div id="hideenter">
+        <div id="windowenter">
+            <div class="entername">
+                Вход
+            </div>
+
+            <a onclick="hideenter()" class="closereg"></a>
+
+            <label for="email"><b>Имя:</b></label>
+            <input type="text" placeholder="Введите имя" name="newname" id="newnameenter" required>
+
+            <label for="psw"><b>Пароль:</b></label>
+            <input type="password" placeholder="Введите пароль" name="psw" required>
+            
+            <div>
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Запомнить пользователя
+                </label>
+            </div>
+            <button onclick="hideenter()" type="submit" class="regbtn">Вход</button>
+        </div>
+    </div>
+
+    <div id="hideregistration">
+        <div id="windowregistration">
+            <div class="regname">
+                Регистрация
+            </div>
+
+            <a onclick="hideregistr()" class="closereg"></a>
+
+            <label for="email"><b>Имя:</b></label>
+            <input type="text" placeholder="Введите имя" name="newname" id="newnamereg" required>
+
+            <label for="email"><b>Email:</b></label>
+            <input type="text" placeholder="Введите Email" name="email" required>
+
+            <label for="psw"><b>Пароль:</b></label>
+            <input type="password" placeholder="Введите пароль" name="psw" required>
+
+            <label for="psw-repeat"><b>Повторите пароль</b></label>
+            <input type="password" placeholder="Повторите пароль" name="psw-repeat" required>
+            
+            <div>
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Запомнить пользователя
+                </label>
+            </div>
+            <button onclick="hideregistr()" type="submit" class="regbtn">Зарегестрироваться</button>
+        </div>
+    </div>
+</body>
+</html>
