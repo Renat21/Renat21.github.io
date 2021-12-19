@@ -46,6 +46,8 @@ html, body {
     height: 50%;
     background:rgba(0,0,0,0);
     border: none;
+    color:rgb(68, 46, 46);
+    text-decoration:none;
 
     margin: auto;
     text-align: center;
