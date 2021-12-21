@@ -56,19 +56,19 @@ function create(){
 }
 function get(figure, cord){
     switch (figure){
-        case 'K' : return "<div class='figure' id='$cord'><img src='../chess/assets/images/black_king.png' width='94%' height='94%'></div>".replace('$cord', cord);
-        case 'Q' : return "<div class='figure' id='$cord'><img src='../chess/assets/images/black_queen.png' width='94%' height='94%'></div>".replace('$cord', cord);
-        case 'R' : return "<div class='figure' id='$cord'><img src='../chess/assets/images/black_rook.png' width='94%' height='94%'></div>".replace('$cord', cord);
-        case 'N' : return "<div class='figure' id='$cord'><img src='../chess/assets/images/black_knight.png' width='94%' height='94%'></div>".replace('$cord', cord);
-        case 'B' : return "<div class='figure' id='$cord'><img src='../chess/assets/images/black_bishop.png' width='94%' height='94%'></div>".replace('$cord', cord);
-        case 'P' : return "<div class='figure' id='$cord'><img src='../chess/assets/images/black_pawn.png' width='94%' height='94%'></div>".replace('$cord', cord);
+        case 'K' : return "<div class='figure' id='$cord'><img src='assets/images/black_king.png' width='94%' height='94%'></div>".replace('$cord', cord);
+        case 'Q' : return "<div class='figure' id='$cord'><img src='assets/images/black_queen.png' width='94%' height='94%'></div>".replace('$cord', cord);
+        case 'R' : return "<div class='figure' id='$cord'><img src='assets/images/black_rook.png' width='94%' height='94%'></div>".replace('$cord', cord);
+        case 'N' : return "<div class='figure' id='$cord'><img src='assets/images/black_knight.png' width='94%' height='94%'></div>".replace('$cord', cord);
+        case 'B' : return "<div class='figure' id='$cord'><img src='assets/images/black_bishop.png' width='94%' height='94%'></div>".replace('$cord', cord);
+        case 'P' : return "<div class='figure' id='$cord'><img src='assets/images/black_pawn.png' width='94%' height='94%'></div>".replace('$cord', cord);
 
-        case 'k' : return "<div class='figure' id='$cord'><img src='../chess/assets/images/white_king.png' width='94%' height='94%'></div>".replace('$cord', cord);
-        case 'q' : return "<div class='figure' id='$cord'><img src='../chess/assets/images/white_queen.png' width='94%' height='94%'></div>".replace('$cord', cord);
-        case 'r' : return "<div class='figure' id='$cord'><img src='../chess/assets/images/white_rook.png' width='94%' height='94%'></div>".replace('$cord', cord);
-        case 'n' : return "<div class='figure' id='$cord'><img src='../chess/assets/images/white_knight.png' width='94%' height='94%'></div>".replace('$cord', cord);
-        case 'b' : return "<div class='figure' id='$cord'><img src='../chess/assets/images/white_bishop.png' width='94%' height='94%'></div>".replace('$cord', cord);
-        case 'p' : return "<div class='figure' id='$cord'><img src='../chess/assets/images/white_pawn.png' width='94%' height='94%'></div>".replace('$cord', cord);
+        case 'k' : return "<div class='figure' id='$cord'><img src='assets/images/white_king.png' width='94%' height='94%'></div>".replace('$cord', cord);
+        case 'q' : return "<div class='figure' id='$cord'><img src='assets/images/white_queen.png' width='94%' height='94%'></div>".replace('$cord', cord);
+        case 'r' : return "<div class='figure' id='$cord'><img src='assets/images/white_rook.png' width='94%' height='94%'></div>".replace('$cord', cord);
+        case 'n' : return "<div class='figure' id='$cord'><img src='assets/images/white_knight.png' width='94%' height='94%'></div>".replace('$cord', cord);
+        case 'b' : return "<div class='figure' id='$cord'><img src='assets/images/white_bishop.png' width='94%' height='94%'></div>".replace('$cord', cord);
+        case 'p' : return "<div class='figure' id='$cord'><img src='assets/images/white_pawn.png' width='94%' height='94%'></div>".replace('$cord', cord);
         case '0' : return "";
     }
 }
